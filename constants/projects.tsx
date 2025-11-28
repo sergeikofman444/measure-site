@@ -15,20 +15,28 @@ export const projects: Record<string, Project> = {
         type: 'solo',
         slug: 'artefacts',
         content: (
-            <>
-                <div className="text-md font-normal space-mono-regular pt-5">
-                    <i>Walking alone through the forest, you notice that the moss is more radiant than usual. Leaning in to see it glitter up close, you notice digital artefacts begin to appear in the deep green layers of the forest floor. As you look around, you wonder if these are the remnants of a past civilization.</i>
-                    <br/>
-                    <br/>
-                    Artefacts is my upcoming debut album, to be released on Halocline Trance in 2026. Following the release of my EP "I Hear the Scent of Change and Stillness", in this project I am diving deeper into a world of frantic grooves, shimmering detail, and raw acoustic elements.
-                    <br/>
-                    <br/>
-                    Listen to the first two singles: <Link href="https://measuremakesmusic.bandcamp.com/track/ghost"><u>GHOST</u></Link>, and <Link href="https://measuremakesmusic.bandcamp.com/track/memory-capsule-2"><u>Memory Capsule</u></Link>
-                    <br/>
-                    <br/>
-                    I built a site with some more information about the album, which I used to pitch it to labels: <Link href="https://artefactsonline.ca/"><u>https://artefactsonline.ca/</u></Link>. The site is handbuilt with html, css, and javascript, using P5.js for interactive visuals. Find the documentation <Link href="https://github.com/sergeikofman-dealmaker/artefacts-online"><u>here</u></Link>.
+            <div className="text-md font-normal space-mono-regular pt-5">
+                <i>Walking alone through the forest, you notice that the moss is more radiant than usual. Leaning in to see it glitter up close, you notice digital artefacts begin to appear in the deep green layers of the forest floor. As you look around, you wonder if these are the remnants of a past civilization.</i>
+                <br/>
+                <br/>
+                Artefacts is my upcoming debut album, to be released on Halocline Trance in 2026. Following the release of my EP "I Hear the Scent of Change and Stillness", in this project I am diving deeper into a world of frantic grooves, shimmering detail, and raw acoustic elements.
+                <br/>
+                <br/>
+                Listen to the first two singles, <i>GHOST</i> and <i>Memory Capsule</i>.
+                <div className="py-4 flex justify-center">
+                    <iframe
+                           className=" w-200"
+                        src="https://bandcamp.com/EmbeddedPlayer/track=2062103585/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+                    />
                 </div>
-            </>
+                <div className="py-4 flex justify-center">
+                    <iframe
+                        className="w-200"
+                        src="https://bandcamp.com/EmbeddedPlayer/track=3380936215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+                    />
+                </div>
+                I built a site with some more information about the album, which I used to pitch it to labels: <Link href="https://artefactsonline.ca/"><u>https://artefactsonline.ca/</u></Link>. The site is handbuilt with html, css, and javascript, using P5.js for interactive visuals. Find the documentation <Link href="https://github.com/sergeikofman-dealmaker/artefacts-online"><u>here</u></Link>.
+            </div>
         ),
     },
     city_centre_dc: {
@@ -45,10 +53,11 @@ export const projects: Record<string, Project> = {
                 </div>
                 <div className="relative w-full h-0 pb-[56.25%]"> 
                     <iframe
-                    src="https://player.vimeo.com/video/1118826185?h=07b8cf3fe7"
-                    title="vimeo-player"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    className="absolute inset-0 w-full h-full"/>
+                        src="https://player.vimeo.com/video/1118826185?h=07b8cf3fe7"
+                        title="vimeo-player"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        className="absolute inset-0 w-full h-full"
+                    />
                 </div>
             </>
         ),
@@ -173,36 +182,183 @@ export const projects: Record<string, Project> = {
         title: 'Young Blondes, Stalked and Murdered',
         type: 'media',
         slug: 'young_blondes',
-        content: 'a score for young blondes stalked and murdered',
+        content: (
+            <div>
+                <i>Young Blondes, Stalked and Murdered</i> is a feature film directed by Nick Funness, produced by Silience. The film has screened at Panic Fest in Kansas City, Salem Film Fest, and other major festivals. 
+                <br/>
+                <br/>
+                The score for this film is comprised of short vignettes which play during dream sequences and transitions. 
+                <br/>
+                <br/>
+                <Link href="https://letterboxd.com/film/young-blondes-stalked-and-murdered/"><u>IMDB</u></Link>
+                <br/>
+                <br/>
+                <Link href="https://www.imdb.com/title/tt29355254/"><u>Letterboxd</u></Link>
+            </div>
+        ),
     },
     change_and_stillness: {
         title: 'I hear the scent of change and stillness',
         type: 'solo',
         slug: 'change_and_stillness',
-        content: 'description about the scent of change and stillness',
+        content: (
+            <div>
+                I Hear the Scent of Change and Stillness is an EP released in 2023. My first major solo effort, this project combined electronic influences ranging from desconstructed club and IDM, with expressive writing for string quartet and piano. The project was supported by the Toronto Arts Council and recorded with the Odin Quartet, alongside several other musicians. 
+                <br/>
+                <br/>
+                <div>
+                    <iframe
+                        className="w-200 py-4"
+                        height="410"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Atracks%253A1528885147&color=%237d91a1&inverse=false&auto_play=false&show_user=true"
+                    />
+                </div>
+                The EP was accompanied by a release party at Toronto's ArraySpace, in June of 2025, performed live with Lazar Miric on Saxophone, and opening sets by Wolfgang Gray and Animal Party.
+                <div className="relative w-full pb-[56.25%] mt-4 mb-4">
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/ZRbwlSVkON8?si=uzwRRGXjFYRqGImD"
+                        title="YouTube video player"
+                        allowFullScreen
+                    />
+                </div>
+                <br/>
+                <br/>
+                Credits: 
+                <br/>
+                <div className="pl-4">
+                   Strings: Odin Quartet (Violin 1 - Alex Toskov, Violin 2 - Tanya Ivaniuk Charles, Viola - Ryan Davis, Cello - Samuel Bisson)
+                   <br/>
+                   Flue on track 1, Flute sample on track 2: Lazar Miric
+                   <br/>
+                   Saxophone on track 3: Paul Lessard
+                   <br/>
+                   Vocal sample on track 1: Wolfgang Gray
+                   <br/>
+                   String Recording; Track Mixing: Dennis Patterson
+                   <br/>
+                   Track Mastering: Freeza Chin
+                   <br/>
+                   Album Art: Maria Kofman
+                </div>
+            </div>
+        ),
     },
     voices_in_the_whir: {
         title: 'Voices in the Whir',
         type: 'solo',
         slug: 'voices_in_the_whir',
-        content: 'my thesis project',
+        content: (
+            <div>
+                <i>Voices in the Whir</i> was composed in 2019-2020 as the thesis project for my masters degree in music composition at the University Toronto, under the supervision of Dr. Eliot Britton. The piece was awarded the Ann H. Atkinson prize for an outstanding electroacoustic work, and was premiered in 2021 at the University of Toronto New Music Festival. 
+                <br/>
+                <br/>
+                <i>Voices in the Whir</i> is a conversation between sounds across the human-machine spectrum. Is there beauty to be found in the cold, calculated process of MIDI playback? Is there a meaningful interface between human performers and their mechanical counterparts? What are the opportunities presented by an acoustic instrument which can be controlled by a computer? Voices in the Whir explores the range of possibilities created by the disklavier (a real acoustic piano with motors in the keys, allowing it to be controlled digitally, like a player-piano) and its combination with a string quartet and electronics.
+                 <div className="relative w-full pb-[56.25%] mt-4 mb-4">
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/edKCucl2NXs?si=YjswBLLd7EdK86rQ"
+                        title="YouTube video player"
+                        allowFullScreen
+                    />
+                </div>
+                Recorded at the University of Toronto Music Studio in 2021 by the Odin Quartet:
+                <div className="pl-4 pb-2">
+                    Violin I - Alex Toskov
+                    <br/>
+                    Violin II - Tanya Charles Iveniuk
+                    <br/>
+                    Viola - Ryan Davis
+                    <br/>
+                    Cello - Samuel Bisson
+                    <br/>
+                </div>
+                Video Credits:
+                <div className="pl-4">
+                    Director of Cinematography - Wolfgang Gray
+                    <br/>
+                    Editor - Wolfgang Gray
+                    <br/>
+                    Audio recording and mixing - Sergei Kofman
+                    <br/>
+                </div>
+            </div>
+        ),
     },
     in_passing: {
-        title: 'In Passing',
+        title: '風不太冷 In Passing',
         type: 'media',
         slug: 'in_passing',
-        content: 'reel asian film festival',
+        content: (
+            <div>
+                <i>風不太冷 In Passing</i> is a short animated film by Esther Cheung. 
+                <br/>
+                <br/>
+                Director's note: <i>A portrait of seventies Hong Kong, as my parents remember it. 風不太冷 In Passing transports viewers and immerses them in the fleeting moments of everyday Hong Kong. Following two neighbours as they grow up in government housing in bustling Mong Kok, Kowloon, the film pays homage to old Hong Kong and aims to capture the history and rich culture of the times. The film is inspired by my parents' reminiscing on their childhoods.</i>
+                <br/>
+                <br/>
+                In Passing won the Toronto Reel Asian International Film Festival Air Canada Award, Communication Arts Illustration Annual 61st Competition Winner Award, National Film Festival for Talented Youth, Best Animated Short (Student) Award, and several others. For a full list of selections and awards visit <Link href="https://www.esther-cheung.com/work/in-passing"><u>https://www.esther-cheung.com/work/in-passing</u></Link>
+                 <div className="relative w-full h-0 pb-[56.25%]"> 
+                    <iframe
+                    src="https://player.vimeo.com/video/329822551?h=a60c2c9ee0"
+                    title="vimeo-player"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    className="absolute inset-0 w-full h-full"/>
+                </div>
+            </div>
+        ),
     },
     overgrowth: {
         title: 'Overgrowth',
         type: 'solo',
         slug: 'overgrowth',
-        content: 'premiered at the Atlantic Music Festival',
+        content: (
+            <div>
+                Overgrowth was composed in 2019 for violin, cello, piano, flute, and clarinet. In it's early stage, the piece was read by the Ensemble Contemporain de Montreal, and it was later premiered at the Atlantic Music Festival in 2019, by the AMF Contemporary Music Ensemble.
+                <br/>
+                <br/>
+                <i>There is a garden, full of weeds. They grow wild and uncotrolled, having covered almost the entire area of the garden. A singe rose is budding amongst the weeds, struggling to reach for the sun. It tries to breath through the weight of the burdensome weeds. Will it flower, or be suffocated under the overgrowth?</i>
+                <div className="relative w-full pb-[56.25%] mt-4 mb-4">
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/XPpXcEx8Faw?si=FxgwI9c_XQcok8Js"
+                        title="YouTube video player"
+                        allowFullScreen
+                    />
+                </div>
+                <br/>
+                Flute: Leo Sussman
+                <br/>
+                Clarinet: Celeste Markey
+                <br/>
+                Piano: Kathy Lee
+                <br/>
+                Violin: Kimberly Durflinger
+                <br/>
+                Cello: Isidora Nojkovic
+                <br/>
+            </div>
+        ),
     },
     faces_we_wear: {
         title: 'The Faces We Wear',
         type: 'media',
         slug: 'the_faces_we_wear',
-        content: 'film by Jean-Luc Moniz',
+        content: (
+            <div>
+                <i>The Faces We Wear</i> is a short film by Jean-Luc Moniz, created in 2019. 
+                <br/>
+                <br/>
+                <i>Mask-maker Teodoro Dragonieri calls on viewers to keep art alive and relevant. The unconventional performer, artist and teacher, shows us the transformative power of mask on identity, as well as the cultural and societal importance of the arts.</i>
+                <div className="relative w-full pb-[56.25%] mt-4 mb-4">
+                    <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/RFPBpPe9uIs?si=UthgayrjEr3oho40"
+                        title="YouTube video player"
+                        allowFullScreen
+                    />
+                </div>
+            </div>
+        )
     },
 }
