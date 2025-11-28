@@ -206,9 +206,9 @@ export const projects: Record<string, Project> = {
                 I Hear the Scent of Change and Stillness is an EP released in 2023. My first major solo effort, this project combined electronic influences ranging from desconstructed club and IDM, with expressive writing for string quartet and piano. The project was supported by the Toronto Arts Council and recorded with the Odin Quartet, alongside several other musicians. 
                 <br/>
                 <br/>
-                <div>
+                <div className="flex justify-center">
                     <iframe
-                        className="w-200 py-4"
+                        className="w-full py-4"
                         height="410"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Atracks%253A1528885147&color=%237d91a1&inverse=false&auto_play=false&show_user=true"
                     />
