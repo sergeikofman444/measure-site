@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
+import Header from '@/components/navigation/Header'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +13,17 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const ztNature = localFont({
+  src: [
+    {
+      path: './fonts/ztnature/ZTNature-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-zt-nature',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +36,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"  className={ztNature.variable}>
+      <head>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={'antialiased'}
+      > 
+        <div className={`bg-black ${ztNature.variable} text-white pb-4`}>
+          <Header/>
+          {children}
+        </div>
       </body>
     </html>
   );
