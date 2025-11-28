@@ -26,15 +26,3 @@ export default function Project () {
     </div>
   );
 };
-
-
-// <div className="relative aspect-square group overflow-hidden">
-//         <Image
-//           src={imageSrc}
-//           alt={project.title}
-//           fill
-//           className="object-cover object-center"
-//           unoptimized
-//           priority
-//         />
-//       </div>

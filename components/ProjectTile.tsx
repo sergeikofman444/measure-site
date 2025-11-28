@@ -13,7 +13,6 @@ export default function ProjectTile({ project }: { project: Project }) {
             alt={project.title}
             fill
             className="object-cover object-center"
-            unoptimized
             priority
         />
         <div className="absolute inset-0 bg-black/30 flex items-center text-center justify-center p-10 duration-300 transition-opacity opacity-0 group-hover:opacity-100">

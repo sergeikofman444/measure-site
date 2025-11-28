@@ -26,7 +26,6 @@ export default function about() {
                     alt='Bio'
                     fill
                     className="object-cover"
-                    unoptimized
                     priority
                 />
             </div>
