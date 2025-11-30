@@ -14,15 +14,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const ztNature = localFont({
+const spaceMono = localFont({
   src: [
     {
-      path: './fonts/ztnature/ZTNature-Regular.woff2',
+      path: './fonts/space-mono-regular.ttf',
       weight: '400',
       style: 'normal',
-    },
-  ],
-  variable: '--font-zt-nature',
+    }
+  ]
 })
 
 export const metadata: Metadata = {
@@ -36,13 +35,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className={ztNature.variable}>
+    <html lang="en"  className={spaceMono.className}>
       <head>
       </head>
       <body
         className={'antialiased'}
       > 
-        <div className={`bg-black ${ztNature.variable} text-white pb-4`}>
+        <div className={`bg-black text-white pb-4`}>
           <Header/>
           {children}
         </div>

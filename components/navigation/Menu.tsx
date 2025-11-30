@@ -8,7 +8,7 @@ export default function MenuItem({ item }: { item: string }) {
     return (
         <Link
             href={`/${slug}`} 
-            className="group rounded p-2 hover:scale-104 hover:font-medium duration-50 transition-transform"
+            className="group rounded p-2 hover:scale-104 hover:font-bold duration-50 transition-transform"
         >
         {item.toLocaleUpperCase()}
         </Link>
