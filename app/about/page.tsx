@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function about() {
     return (
-        <div className="p-8 flex gap-8">
-            <div className="w-1/2">
+        <div className="p-8 flex flex-col md:flex-row gap-8 ">
+            <div className="w-full md:w-1/2">
                 <h1 className="text-4xl font-bold mb-4">About</h1>
                 <br/>
                 Sergei (Measure) chases the music at the tip of the tongue and stuck at the back of the head. Inspired by pushing the limits of sound design and wrapping it up in a parcel of lush harmony and thorough storytelling; he is seeking out sounds that are familiar but never quite within grasp.
@@ -20,7 +20,7 @@ export default function about() {
                 <br/>
                 Sergei is currently working on his debut album Artefacts, due to be released in 2026 on Toronto's experimental electronic label Halocline Trance. 
             </div>
-            <div className="w-1/2 relative aspect-4/5"> 
+            <div className="w-full md:w-1/2 relative aspect-4/5"> 
                 <Image
                     src='/project_images/bio.jpg'
                     alt='Bio'

@@ -20,7 +20,7 @@ export default function Project () {
   return (
     <div className="w-full">
       <div className="py-8 px-8 md:px-64 items-center">
-        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+        <h1 className="text-2xl md:text-4xl font-bold mb-4">{project.title}</h1>
         {project.content}
       </div>
     </div>

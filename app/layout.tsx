@@ -41,7 +41,7 @@ export default function RootLayout({
       <body
         className={'antialiased'}
       > 
-        <div className={`bg-black text-white pb-4`}>
+        <div className={`min-h-screen w-full bg-black text-white pb-4 text-sm md:text-md`}>
           <Header/>
           {children}
         </div>
