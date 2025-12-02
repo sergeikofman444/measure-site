@@ -40,9 +40,9 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/icon.png"></link>
       </head>
       <body
-        className={'antialiased'}
+        className={'antialiased overflow-y-scroll'}
       > 
-        <div className={`min-h-screen w-full bg-black text-white pb-4 text-sm md:text-md`}>
+        <div className={'min-h-screen w-full bg-black text-white pb-4 text-sm md:text-md'}>
           <Header/>
           {children}
         </div>
