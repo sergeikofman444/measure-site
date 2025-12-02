@@ -37,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en"  className={spaceMono.className}>
       <head>
+        <link rel="icon" type="image/x-icon" href="/icon.png"></link>
       </head>
       <body
         className={'antialiased'}
