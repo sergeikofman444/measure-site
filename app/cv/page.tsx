@@ -1,5 +1,5 @@
-import {Media, Concert} from '@/components/Credits'
-import {mediaCredits, danceCredits, orchestraWorks, chamberWorks, soloWorks} from '@/constants/credits'
+import {Media} from '@/components/Credits'
+import {mediaCredits, danceCredits, releases, productionCredits, orchestraWorks, chamberWorks, soloWorks} from '@/constants/credits'
 
 export default function Credits() {
     return (
@@ -21,6 +21,22 @@ export default function Credits() {
                 ))}
             </div>
             <div className="px-8 pt-6 pb-4 font-semibold text-xl">
+                RELEASES
+            </div>
+            <div className="px-10">
+                {Object.values(releases).map((credit) => (
+                    <Media key={credit.title} credit={credit} />
+                ))}
+            </div>
+            <div className="px-8 pt-6 pb-4 font-semibold text-xl">
+                PRODUCTION CREDITS
+            </div>
+            <div className="px-10">
+                {Object.values(productionCredits).map((credit) => (
+                    <Media key={credit.title} credit={credit} />
+                ))}
+            </div>
+            <div className="px-8 pt-6 pb-4 font-semibold text-xl">
                 CONCERT WORKS
             </div>
             <div className="px-12 pb-4 font-semibold text-lg">
@@ -28,7 +44,7 @@ export default function Credits() {
             </div>
             <div className="px-16">
                 {Object.values(orchestraWorks).map((credit) => (
-                    <Concert key={credit.title} credit={credit} />
+                    <Media key={credit.title} credit={credit} />
                 ))}
             </div>
             <div className="px-12 py-4 font-semibold text-lg">
@@ -36,7 +52,7 @@ export default function Credits() {
             </div>
             <div className="px-16">
                 {Object.values(chamberWorks).map((credit) => (
-                    <Concert key={credit.title} credit={credit} />
+                    <Media key={credit.title} credit={credit} />
                 ))}
             </div>
             <div className="px-12 py-4 font-semibold text-lg">
@@ -44,7 +60,7 @@ export default function Credits() {
             </div>
             <div className="px-16">
                 {Object.values(soloWorks).map((credit) => (
-                    <Concert key={credit.title} credit={credit} />
+                    <Media key={credit.title} credit={credit} />
                 ))}
             </div>
         </>
