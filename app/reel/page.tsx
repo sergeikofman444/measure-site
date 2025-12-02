@@ -19,6 +19,14 @@ export default function Reel() {
                 height="600"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A237449723&color=%237d91a1&inverse=false&auto_play=false&show_user=true"
             />
+            <div className="md:w-200">
+                A spotify playlist of some production work.
+            </div>
+            <iframe
+                className="w-full py-8"
+                height="600"
+                src="https://open.spotify.com/embed/playlist/5u3OC8dAuAGbEeIPC4KScp?utm_source=generator"
+            />
         </div>
     </div>
   );
