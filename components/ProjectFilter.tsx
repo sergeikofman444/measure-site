@@ -20,7 +20,9 @@ export default function ProjectFilter({
         aria-label="Toggle menu"
       >
         <div className="flex gap-2 items-center mb-4">
-          <span className="font-semibold">
+          <span
+            className={`${isFilterOpen ? "font-semibold" : ""} hover:font-semibold`}
+          >
             {selectedTypes.size === 0
               ? "all projects"
               : Array.from(selectedTypes).join(", ")}
@@ -51,7 +53,7 @@ export default function ProjectFilter({
           <div>
             <button
               key={type}
-              className={`px-2 py-1 rounded ${
+              className={`px-2 py-1 rounded hover:font-semibold ${
                 selectedTypes.has(type) ? "font-semibold" : ""
               }`}
               onClick={() => toggleType(type)}
