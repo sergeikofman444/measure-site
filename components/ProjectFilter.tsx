@@ -50,7 +50,7 @@ export default function ProjectFilter({
         </div>
 
         {projectTypes.map((type) => (
-          <div>
+          <div key={type}>
             <button
               key={type}
               className={`px-2 py-1 rounded hover:font-semibold ${
