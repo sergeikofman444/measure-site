@@ -33,8 +33,8 @@ export default function ProjectFilter({
       <div
         className={`
                 absolute right-0 top-full mt-2 mr-4
-                z-50 w-30
-                transition-opacity duration-300 rounded-md bg-black
+                z-50 w-34
+                transition-opacity duration-300 rounded-md bg-black text-right
                 ${isFilterOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
             `}
       >
