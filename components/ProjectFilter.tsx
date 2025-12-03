@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { ChevronDown, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { projectTypes, ProjectType } from "@/constants/projects";
 
 type ProjectFilterProps = {
@@ -27,6 +28,12 @@ export default function ProjectFilter({
               ? "all projects"
               : Array.from(selectedTypes).join(", ")}
           </span>
+          <ChevronRightIcon
+            className={`transition-transform duration-200 self-center ${
+              isFilterOpen ? "rotate-90" : "rotate-0"
+            }`}
+            size={16}
+          />
         </div>
       </button>
 
