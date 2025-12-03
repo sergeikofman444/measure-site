@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { projectTypes, ProjectType } from "@/constants/projects";
-import { X } from "lucide-react";
 
 type ProjectFilterProps = {
   selectedTypes: Set<string>;
