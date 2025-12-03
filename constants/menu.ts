@@ -1,7 +1,1 @@
-export const menuItems = [
-    'home',
-    'about',
-    'reel',
-    'cv',
-    'contact',
-]
+export const menuItems = ["home", "about", "reel", "cv", "contact"];
