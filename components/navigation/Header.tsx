@@ -16,16 +16,6 @@ const akira = localFont({
   ],
 });
 
-const ztNature = localFont({
-  src: [
-    {
-      path: "../../app/fonts/ztnature/ZTNature-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-});
-
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

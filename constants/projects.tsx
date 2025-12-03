@@ -1,9 +1,20 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 
+export const projectTypes = [
+  "film",
+  "dance",
+  "commercial",
+  "solo release",
+  "concert work",
+  "technology",
+] as const;
+
+export type ProjectType = (typeof projectTypes)[number];
+
 export type Project = {
   title: string;
-  type: "solo" | "media" | "commercial";
+  type: ProjectType[];
   slug: string;
   content: ReactNode;
 };
@@ -11,7 +22,7 @@ export type Project = {
 export const projects: Record<string, Project> = {
   artefacts: {
     title: "Artefacts",
-    type: "solo",
+    type: ["solo release"],
     slug: "artefacts",
     content: (
       <div className="text-md font-normal space-mono-regular pt-5">
@@ -59,7 +70,7 @@ export const projects: Record<string, Project> = {
   },
   city_centre_dc: {
     title: "City Centre DC",
-    type: "commercial",
+    type: ["commercial"],
     slug: "city_centre",
     content: (
       <>
@@ -86,7 +97,7 @@ export const projects: Record<string, Project> = {
   },
   hedonist: {
     title: "The Hedonist",
-    type: "media",
+    type: ["film"],
     slug: "hedonist",
     content: (
       <>
@@ -119,7 +130,7 @@ export const projects: Record<string, Project> = {
   },
   bvbk: {
     title: "Be Vardų, Be Kojų",
-    type: "media",
+    type: ["dance"],
     slug: "bvbk",
     content: (
       <>
@@ -168,7 +179,7 @@ export const projects: Record<string, Project> = {
   },
   tams: {
     title: "Tams In The City",
-    type: "commercial",
+    type: ["commercial"],
     slug: "tams",
     content: (
       <>
@@ -192,7 +203,7 @@ export const projects: Record<string, Project> = {
   },
   lotusland: {
     title: "Lotusland Sound Walk",
-    type: "media",
+    type: ["technology"],
     slug: "lotusland_soundwalk",
     content: (
       <>
@@ -231,7 +242,7 @@ export const projects: Record<string, Project> = {
   },
   softgrit: {
     title: "Softgrit",
-    type: "commercial",
+    type: ["commercial"],
     slug: "softgrit",
     content: (
       <>
@@ -256,7 +267,7 @@ export const projects: Record<string, Project> = {
   },
   young_blondes: {
     title: "Young Blondes, Stalked and Murdered",
-    type: "media",
+    type: ["film"],
     slug: "young_blondes",
     content: (
       <div>
@@ -282,7 +293,7 @@ export const projects: Record<string, Project> = {
   },
   change_and_stillness: {
     title: "I hear the scent of change and stillness",
-    type: "solo",
+    type: ["solo release"],
     slug: "change_and_stillness",
     content: (
       <div>
@@ -337,7 +348,7 @@ export const projects: Record<string, Project> = {
   },
   voices_in_the_whir: {
     title: "Voices in the Whir",
-    type: "solo",
+    type: ["solo release", "concert work", "technology"],
     slug: "voices_in_the_whir",
     content: (
       <div>
@@ -392,7 +403,7 @@ export const projects: Record<string, Project> = {
   },
   in_passing: {
     title: "風不太冷 In Passing",
-    type: "media",
+    type: ["film"],
     slug: "in_passing",
     content: (
       <div>
@@ -432,7 +443,7 @@ export const projects: Record<string, Project> = {
   },
   overgrowth: {
     title: "Overgrowth",
-    type: "solo",
+    type: ["concert work"],
     slug: "overgrowth",
     content: (
       <div>
@@ -473,7 +484,7 @@ export const projects: Record<string, Project> = {
   },
   faces_we_wear: {
     title: "The Faces We Wear",
-    type: "media",
+    type: ["film"],
     slug: "the_faces_we_wear",
     content: (
       <div>
