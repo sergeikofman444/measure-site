@@ -273,7 +273,8 @@ export const projects: Record<string, Project> = {
       <div>
         <i>Young Blondes, Stalked and Murdered</i> is a feature film directed by
         Nick Funness, produced by Silience. The film has screened at Panic Fest
-        in Kansas City, Salem Film Fest, and other major festivals.
+        in Kansas City, Salem Film Fest, and other major festivals. The film had
+        a US theatrical and video-on-demand release in December of 2025.
         <br />
         <br />
         The score for this film is comprised of short vignettes which play
