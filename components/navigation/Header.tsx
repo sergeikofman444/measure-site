@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { menuItems } from "@/constants/menu";
 import MenuItem from "./Menu";
 import localFont from "next/font/local";
@@ -35,6 +36,32 @@ export default function Header() {
           <div className="flex flex-col gap-2 w-fit items-center text-center">
             <div className={`${akira.className}`}>
               <div className="text-5xl">Measure // Sergei Kofman</div>
+            </div>
+            <div className="relative flex md:absolute top-3 right-3">
+              <Link
+                href="https://www.instagram.com/measure.music/"
+                className="flex items-center hover:scale-105"
+              >
+                <Image
+                  src="/instagram.png"
+                  alt="Instagram Icon"
+                  width="30"
+                  height="30"
+                  className="h-9 w-auto object-contain"
+                />
+              </Link>
+              <Link
+                href="mailto:sergeilevkofman@gmail.com"
+                className="flex items-center hover:scale-105"
+              >
+                <Image
+                  src="/email.png"
+                  alt="Instagram Icon"
+                  width="30"
+                  height="30"
+                  className="h-5 w-auto object-contain"
+                />
+              </Link>
             </div>
           </div>
           <div className="hidden md:flex gap-2 text-lg w-[60%] justify-between">

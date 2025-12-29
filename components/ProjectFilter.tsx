@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ChevronDown, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 import { projectTypes, ProjectType } from "@/constants/projects";
 
 type ProjectFilterProps = {
