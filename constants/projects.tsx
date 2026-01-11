@@ -510,4 +510,53 @@ export const projects: Record<string, Project> = {
       </div>
     ),
   },
+  music_charts_analytics: {
+    title: "chartanalytica.xyz",
+    type: ["technology"],
+    slug: "chart_analytica",
+    content: (
+      <>
+        <div>
+          <Link href="https://www.chartanalytica.xyz">
+            <u>www.chartanalytica.xyz</u>
+          </Link>{" "}
+          is a web app analyzing trends in the way we consume music.
+        </div>
+        <div className="mt-4">
+          I used to check streaming and billboard charts pretty often. As a
+          musician myself, it was interesting to look for trends in the way we
+          listen to music. At some point, around 2022 or 2023, I started
+          noticing that older songs were popping up on charts - for example, a
+          song from 6 or 7 years ago would pop up occasionally on the charts
+          after becoming a viral tik tok audio. I decided to quantify this to
+          see how trends in our listening habits have evolved over time.
+        </div>
+        <div className="mt-4">
+          The data was assembled from{" "}
+          <Link href="https://github.com/mhollingshead/billboard-hot-100">
+            <u>this</u>
+          </Link>{" "}
+          dataset by mhollingshead. Using Python, the dataset was broken into
+          weekly chart instances, which would then be used for analytics. Each
+          Track/Artist was then search via the Spotify API (using spotipy), to
+          add the track ISRC, Spotify ID, and to pair the track with a relation
+          of artist(s). Then, the data was enriched with track release date, and
+          artist type (group/individual), artist country of origin, and artist
+          year of origin, using the MusicBrainz API.
+        </div>
+        <div className="mt-4">
+          There is a GitHub repo for the data processing/ETL:{" "}
+          <Link href="https://github.com/sergeikofman444/music-data-scripts">
+            <u>https://github.com/sergeikofman444/music-data-scripts</u>
+          </Link>
+        </div>
+        <div className="mt-4">
+          And another for the application:{" "}
+          <Link href="https://github.com/sergeikofman444/music-charts-analytics">
+            <u>https://github.com/sergeikofman444/music-charts-analytics</u>
+          </Link>
+        </div>
+      </>
+    ),
+  },
 };

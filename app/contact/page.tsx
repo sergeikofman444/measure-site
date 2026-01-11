@@ -85,6 +85,12 @@ export default function Contact() {
         >
           <u>Spotify</u>
         </Link>
+        <Link
+          className="hover:font-bold"
+          href="https://github.com/sergeikofman444"
+        >
+          <u>GitHub</u>
+        </Link>
         <div className="text-center">
           References and more work available upon request.
         </div>
